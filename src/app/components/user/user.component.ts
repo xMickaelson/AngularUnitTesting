@@ -16,18 +16,18 @@ export class UserComponent {
    status = "Single"
    
    showUserName(){
-    // setTimeout(()=>{
-    //   this.username = "Ramesh Verma"
-    // },1000)
+    setTimeout(()=>{
+      this.username = "Ramesh Verma"
+    },1000)
 
     // Promise.resolve().then(()=>{
     //   this.username = "Ramesh Verma"
     // })
 
-    ajax("https://jsonplaceholder.typicode.com/users")
-    .subscribe((data:any)=>{
-      this.username = data.response[0].name
-    })
+    // ajax("https://jsonplaceholder.typicode.com/users")
+    // .subscribe((data:any)=>{
+    //   this.username = data.response[0].name
+    // })
 
 
    }
